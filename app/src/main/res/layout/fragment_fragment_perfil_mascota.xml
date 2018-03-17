@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.duvan.petagram.fragmentPerfilMascota">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/fotoPerfil"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img5"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#8BC34A"
+        app:civ_shadow_radius="10"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="30dp"
+        android:layout_gravity="top|center"
+        />
+
+    <TextView
+        android:id="@+id/txtMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_below="@+id/fotoPerfil"
+        android:layout_centerHorizontal="true"
+        android:text="MOTAS"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/fotoPerfil"
+        app:layout_anchorGravity="bottom|center" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fotosMascota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/paddingRvMasotas"
+       android:layout_below="@id/txtMascota"
+
+       />
+
+
+
+
+</RelativeLayout>
